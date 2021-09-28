@@ -1,0 +1,132 @@
+/* basic style*/
+@font-face {
+  font-weight: normal;
+	font-style: normal;
+	font-family: 'Conv_Minion Pro Regular';
+	src: url('../fonts/ Pro Regular.eot');
+	src: local('☺'),
+       url('../fonts/Minion Pro Regular.woff') format('woff'), 
+       url('../fonts/Minion Pro Regular.ttf') format('truetype'), 
+       url('../fonts/Minion Pro Regular.svg') format('svg');
+}
+*{
+  margin: 0;
+  padding: 0;
+  text-decoration: none;
+  list-style: none;
+}
+:root{background-color: #fff;}
+body{
+  margin: 0 auto;
+  padding: 0 5%;
+  max-width: 1300px;
+  font-family:  'Conv_Minion Pro Regular', serif;
+  font-size: 14px;
+}
+a{ text-decoration: none;color: #000;}
+p,h3{margin:38px 0;}
+/*header */
+.logo{ flex: 1 155px;}
+span.big{text-transform: uppercase;}
+header{ 
+  text-transform: uppercase; 
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  margin-top: 15px;
+}
+header nav{flex: 4 805px;}
+header ul{
+  min-height: 51px;
+  display: flex;
+  align-items: center;
+  justify-content: space-around;
+}
+.leng{flex: 1 97px;}
+header nav li{ 
+  font-size: calc(0.5em + 1vmin);
+  font-weight: bold;
+  font-family: "Conv_Minion Pro Regular";
+}
+header nav li:first-child,li:last-child{padding: 0;}
+.lang ul li{display: none; position: relative; margin-left: 40px; font-weight: bolder; font-size: calc(0.6em + 1vmin);
+}
+.lang ul li:first-child{
+  display: block;
+  cursor: pointer;
+}
+.lang ul li object{ /*object вместо img чтобы скрыть иконку сломанного изображенния*/
+  position: absolute;
+  top:2px;
+  left:-30px;
+  display: inline-block;
+  border-radius:20px;
+  outline: none;
+}
+.lang ul li object img{
+  width: 22px;
+  height: auto
+}
+/*.lang ul li span::after{
+  content: "&or;";
+}*/
+/*header end*/
+.bottom-nav ul{
+  display: flex;
+  margin: 25px 0 10px 0;
+}
+.bottom-nav ul li{
+  font-size: calc(0.5em + 1vmin);
+  padding: 5px;
+  text-transform: capitalize;
+}
+.bottom-nav ul li::before{
+  content: "/";
+}
+.bottom-nav ul li:first-child::before{
+  content: " ";
+}
+/*content*/
+.content-wrap{
+  display: flex;
+}
+.left-side{
+  flex:1 244px;
+}
+.left-side h2{
+  margin-top: 23%;
+  font-size: 30px;
+  line-height: 24px;
+  text-transform: uppercase;
+}
+.right-side{
+  flex: 10 915px;
+}
+/*banner*/
+.banner{
+  background-color: #aeaeae;
+  background-image: url(../img/no-img_ico.png);
+  background-repeat: no-repeat;
+  background-position:left 50% top 20%;
+  min-height: 550px;
+}
+/*content end*/
+/*footer*/
+footer{margin:4% 0;}
+.footer-wrap{display: flex;}
+.contacts{
+  min-height: 51px;
+  margin-right: 55px;
+  flex:10;
+  display: flex;
+  align-items:center;
+  justify-content: space-between;
+}
+.social{
+  flex:1;
+  min-height: 51px;
+  display: flex;
+  align-items:center;
+  justify-content:space-around;
+}
+/*footer end*/
